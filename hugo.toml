@@ -6,10 +6,12 @@ theme = 'terminal'
 [params]
   # These are specific to the Terminal theme
   contentTypeName = "none"
-  title = "Matt Brocklehurst"
+  title = "Matt Brocklehurst | R&D Systems Architect & Fixer"
   subtitle = "R&D Systems Architect & Problem Liquidator"
   owner = "Matt Brocklehurst"
-  
+  description = "Specializing in reverse-engineering, legacy hardware modernization, and industrial automation (OpenPnP, MegaSquirt, Zevatech)."  
+  keywords = ["Systems Architect", "Burnley", "Reverse Engineering", "OpenPnP", "Industrial Automation"]
+
   # This section handles the "Terminal" appearance
   [params.terminal]
     showTitle = true
