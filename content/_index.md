@@ -27,4 +27,4 @@ I provide high-leverage technical liquidation for complex systems. Whether it is
 ---
 
 *Currently available for Lead R&D roles and specialized technical consultancy.*
-[GitHub](https://github.com/mattbrocklehurst)
+[m@mattbrocklehurst.co.uk](mailto:m@mattbrocklehurst.co.uk) | [GitHub](https://github.com/mattbrocklehurst)
