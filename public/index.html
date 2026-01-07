@@ -84,8 +84,6 @@
 <meta property="og:image:height" content="627">
 
 
-  <meta property="article:published_time" content="2026-01-07 00:00:00 &#43;0000 UTC" />
-
 
 
 
@@ -126,15 +124,26 @@
     
   
     <div class="index-content ">
-      <h1 id="matt-brocklehurst-problem-liquidation">Matt Brocklehurst: Problem Liquidation</h1>
-<p>[cite_start]I am an R&amp;D Systems Architect specializing in &ldquo;Impossible&rdquo; problems where software hits hardware[cite: 9, 14].</p>
-<h3 id="core-capabilities">Core Capabilities:</h3>
+      <h1 id="matt-brocklehurst--systems-surgeon">Matt Brocklehurst | Systems Surgeon</h1>
+<p><strong>Senior R&amp;D Systems Architect specializing in &ldquo;Impossible&rdquo; problems where software hits hardware.</strong></p>
+<p>I provide high-leverage technical liquidation for complex systems. Whether it is rescuing undocumented legacy hardware or architecting high-performance rendering engines for global scale, I bridge the gap between low-level engineering and enterprise reliability.</p>
+<hr>
+<h2 id="-core-capabilities">🛠️ Core Capabilities</h2>
 <ul>
-<li>[cite_start]<strong>Deep Debugging:</strong> SDL2 Mainline contributor[cite: 17].</li>
-<li>[cite_start]<strong>Mass-Scale Reliability:</strong> 50,000+ units deployed on PIC 10F hardware[cite: 58].</li>
-<li>[cite_start]<strong>Legacy Modernization:</strong> Bridging undocumented systems to modern environments[cite: 14].</li>
+<li><strong>System Modernization:</strong> Reverse-engineering and resurrecting obsolete hardware (Zevatech, Legacy ECUs).</li>
+<li><strong>High-Performance C++:</strong> Architecting deterministic rendering and low-latency audio kernels.</li>
+<li><strong>Mass-Scale Reliability:</strong> Proven track record with 50,000+ units deployed on resource-constrained PIC hardware.</li>
+<li><strong>Full-Stack Hardware:</strong> Multi-layer PCB design (Altium/Pulsonix) and ARM/RTOS firmware development.</li>
 </ul>
-<p><em>Currently available for Lead R&amp;D roles and specialized consultancy.</em></p>
+<h2 id="-featured-missions">🚀 Featured Missions</h2>
+<ul>
+<li><strong>SDL2 Mainline Fix:</strong> Liquidated a kernel-level thread synchronization deadlock in the Win32 event loop.</li>
+<li><strong>DIBThread Rendering:</strong> Architected a high-frequency rendering kernel for 60FPS deterministic display.</li>
+<li><strong>OpenPnP Core:</strong> Modernizing computer vision and motion control for open-source SMT assembly.</li>
+</ul>
+<hr>
+<p><em>Currently available for Lead R&amp;D roles and specialized technical consultancy.</em>
+<a href="https://github.com/mattbrocklehurst">GitHub</a></p>
 
     </div>
   
@@ -178,12 +187,12 @@
             <h2 id="the-objective">The Objective</h2>
 <p>Identify and liquidate a race condition in the SDL2 core that caused intermittent deadlocks during high-frequency window resizing on multi-threaded Win32 environments.</p>
 <h2 id="the-problem">The Problem</h2>
-<p>[cite_start]Standard application-level debugging couldn&rsquo;t catch the issue as it resided at the boundary of the <strong>Win32 Message Loop</strong> and SDL&rsquo;s internal thread-safety mutexes.</p>
+<p>Standard application-level debugging couldn&rsquo;t catch the issue as it resided at the boundary of the <strong>Win32 Message Loop</strong> and SDL&rsquo;s internal thread-safety mutexes.</p>
 <h2 id="the-liquidation">The Liquidation</h2>
 <ul>
-<li>[cite_start]<strong>Deep Debugging:</strong> Utilized <strong>WinDBG</strong> to trace kernel-level synchronization primitives[cite: 47].</li>
+<li><strong>Deep Debugging:</strong> Utilized <strong>WinDBG</strong> to trace kernel-level synchronization primitives.</li>
 <li><strong>Logic Correction:</strong> Refactored the wait-state logic to ensure deterministic thread release order.</li>
-<li>[cite_start]<strong>Upstream Contribution:</strong> Submitted the fix to the SDL2 mainline, ensuring the stability of thousands of downstream gaming and industrial applications.</li>
+<li><strong>Upstream Contribution:</strong> Submitted the fix to the SDL2 mainline, ensuring the stability of thousands of downstream gaming and industrial applications.</li>
 </ul>
 <blockquote>
 <p>&ldquo;A System Surgeon doesn&rsquo;t patch symptoms; we fix the underlying skeletal structure.&rdquo;</p>

@@ -152,12 +152,12 @@
             <h2 id="the-objective">The Objective</h2>
 <p>Identify and liquidate a race condition in the SDL2 core that caused intermittent deadlocks during high-frequency window resizing on multi-threaded Win32 environments.</p>
 <h2 id="the-problem">The Problem</h2>
-<p>[cite_start]Standard application-level debugging couldn&rsquo;t catch the issue as it resided at the boundary of the <strong>Win32 Message Loop</strong> and SDL&rsquo;s internal thread-safety mutexes.</p>
+<p>Standard application-level debugging couldn&rsquo;t catch the issue as it resided at the boundary of the <strong>Win32 Message Loop</strong> and SDL&rsquo;s internal thread-safety mutexes.</p>
 <h2 id="the-liquidation">The Liquidation</h2>
 <ul>
-<li>[cite_start]<strong>Deep Debugging:</strong> Utilized <strong>WinDBG</strong> to trace kernel-level synchronization primitives[cite: 47].</li>
+<li><strong>Deep Debugging:</strong> Utilized <strong>WinDBG</strong> to trace kernel-level synchronization primitives.</li>
 <li><strong>Logic Correction:</strong> Refactored the wait-state logic to ensure deterministic thread release order.</li>
-<li>[cite_start]<strong>Upstream Contribution:</strong> Submitted the fix to the SDL2 mainline, ensuring the stability of thousands of downstream gaming and industrial applications.</li>
+<li><strong>Upstream Contribution:</strong> Submitted the fix to the SDL2 mainline, ensuring the stability of thousands of downstream gaming and industrial applications.</li>
 </ul>
 <blockquote>
 <p>&ldquo;A System Surgeon doesn&rsquo;t patch symptoms; we fix the underlying skeletal structure.&rdquo;</p>

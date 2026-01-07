@@ -1,16 +1,25 @@
+# Matt Brocklehurst | Systems Surgeon
+
+**Senior R&D Systems Architect specializing in "Impossible" problems where software hits hardware.**
+
+I provide high-leverage technical liquidation for complex systems. Whether it is rescuing undocumented legacy hardware or architecting high-performance rendering engines for global scale, I bridge the gap between low-level engineering and enterprise reliability.
+
 ---
-title: "System Surgeon | R&D Architect"
-date: 2026-01-07
-draft: false
+
+## 🛠️ Core Capabilities
+
+* **System Modernization:** Reverse-engineering and resurrecting obsolete hardware (Zevatech, Legacy ECUs).
+* **High-Performance C++:** Architecting deterministic rendering and low-latency audio kernels.
+* **Mass-Scale Reliability:** Proven track record with 50,000+ units deployed on resource-constrained PIC hardware.
+* **Full-Stack Hardware:** Multi-layer PCB design (Altium/Pulsonix) and ARM/RTOS firmware development.
+
+## 🚀 Featured Missions
+
+* **SDL2 Mainline Fix:** Liquidated a kernel-level thread synchronization deadlock in the Win32 event loop.
+* **DIBThread Rendering:** Architected a high-frequency rendering kernel for 60FPS deterministic display.
+* **OpenPnP Core:** Modernizing computer vision and motion control for open-source SMT assembly.
+
 ---
 
-# Matt Brocklehurst: Problem Liquidation
-
-[cite_start]I am an R&D Systems Architect specializing in "Impossible" problems where software hits hardware[cite: 9, 14]. 
-
-### Core Capabilities:
-* [cite_start]**Deep Debugging:** SDL2 Mainline contributor[cite: 17].
-* [cite_start]**Mass-Scale Reliability:** 50,000+ units deployed on PIC 10F hardware[cite: 58].
-* [cite_start]**Legacy Modernization:** Bridging undocumented systems to modern environments[cite: 14].
-
-*Currently available for Lead R&D roles and specialized consultancy.*
+*Currently available for Lead R&D roles and specialized technical consultancy.*
+[GitHub](https://github.com/mattbrocklehurst)

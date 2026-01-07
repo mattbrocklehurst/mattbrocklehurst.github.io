@@ -7,8 +7,8 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="The Objective Identify and liquidate a race condition in the SDL2 core that caused intermittent deadlocks during high-frequency window resizing on multi-threaded Win32 environments.
-The Problem [cite_start]Standard application-level debugging couldn&rsquo;t catch the issue as it resided at the boundary of the Win32 Message Loop and SDL&rsquo;s internal thread-safety mutexes.
-The Liquidation [cite_start]Deep Debugging: Utilized WinDBG to trace kernel-level synchronization primitives[cite: 47]. Logic Correction: Refactored the wait-state logic to ensure deterministic thread release order. [cite_start]Upstream Contribution: Submitted the fix to the SDL2 mainline, ensuring the stability of thousands of downstream gaming and industrial applications. &ldquo;A System Surgeon doesn&rsquo;t patch symptoms; we fix the underlying skeletal structure.&rdquo;
+The Problem Standard application-level debugging couldn&rsquo;t catch the issue as it resided at the boundary of the Win32 Message Loop and SDL&rsquo;s internal thread-safety mutexes.
+The Liquidation Deep Debugging: Utilized WinDBG to trace kernel-level synchronization primitives. Logic Correction: Refactored the wait-state logic to ensure deterministic thread release order. Upstream Contribution: Submitted the fix to the SDL2 mainline, ensuring the stability of thousands of downstream gaming and industrial applications. &ldquo;A System Surgeon doesn&rsquo;t patch symptoms; we fix the underlying skeletal structure.&rdquo;
 " />
 <meta name="keywords" content="" />
 
@@ -77,8 +77,8 @@ The Liquidation [cite_start]Deep Debugging: Utilized WinDBG to trace kernel-leve
 <meta property="og:type" content="article" />
 <meta property="og:title" content="Technical Mission: SDL2 Mainline Thread-Sync Fix">
 <meta property="og:description" content="The Objective Identify and liquidate a race condition in the SDL2 core that caused intermittent deadlocks during high-frequency window resizing on multi-threaded Win32 environments.
-The Problem [cite_start]Standard application-level debugging couldn&rsquo;t catch the issue as it resided at the boundary of the Win32 Message Loop and SDL&rsquo;s internal thread-safety mutexes.
-The Liquidation [cite_start]Deep Debugging: Utilized WinDBG to trace kernel-level synchronization primitives[cite: 47]. Logic Correction: Refactored the wait-state logic to ensure deterministic thread release order. [cite_start]Upstream Contribution: Submitted the fix to the SDL2 mainline, ensuring the stability of thousands of downstream gaming and industrial applications. &ldquo;A System Surgeon doesn&rsquo;t patch symptoms; we fix the underlying skeletal structure.&rdquo;
+The Problem Standard application-level debugging couldn&rsquo;t catch the issue as it resided at the boundary of the Win32 Message Loop and SDL&rsquo;s internal thread-safety mutexes.
+The Liquidation Deep Debugging: Utilized WinDBG to trace kernel-level synchronization primitives. Logic Correction: Refactored the wait-state logic to ensure deterministic thread release order. Upstream Contribution: Submitted the fix to the SDL2 mainline, ensuring the stability of thousands of downstream gaming and industrial applications. &ldquo;A System Surgeon doesn&rsquo;t patch symptoms; we fix the underlying skeletal structure.&rdquo;
 " />
 <meta property="og:url" content="http://localhost:1313/posts/sdl2-mainline-fix/" />
 <meta property="og:site_name" content="Matt Brocklehurst | Systems Surgeon" />
@@ -155,12 +155,12 @@ The Liquidation [cite_start]Deep Debugging: Utilized WinDBG to trace kernel-leve
         <h2 id="the-objective">The Objective<a href="#the-objective" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <p>Identify and liquidate a race condition in the SDL2 core that caused intermittent deadlocks during high-frequency window resizing on multi-threaded Win32 environments.</p>
 <h2 id="the-problem">The Problem<a href="#the-problem" class="hanchor" ariaLabel="Anchor">#</a> </h2>
-<p>[cite_start]Standard application-level debugging couldn&rsquo;t catch the issue as it resided at the boundary of the <strong>Win32 Message Loop</strong> and SDL&rsquo;s internal thread-safety mutexes.</p>
+<p>Standard application-level debugging couldn&rsquo;t catch the issue as it resided at the boundary of the <strong>Win32 Message Loop</strong> and SDL&rsquo;s internal thread-safety mutexes.</p>
 <h2 id="the-liquidation">The Liquidation<a href="#the-liquidation" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <ul>
-<li>[cite_start]<strong>Deep Debugging:</strong> Utilized <strong>WinDBG</strong> to trace kernel-level synchronization primitives[cite: 47].</li>
+<li><strong>Deep Debugging:</strong> Utilized <strong>WinDBG</strong> to trace kernel-level synchronization primitives.</li>
 <li><strong>Logic Correction:</strong> Refactored the wait-state logic to ensure deterministic thread release order.</li>
-<li>[cite_start]<strong>Upstream Contribution:</strong> Submitted the fix to the SDL2 mainline, ensuring the stability of thousands of downstream gaming and industrial applications.</li>
+<li><strong>Upstream Contribution:</strong> Submitted the fix to the SDL2 mainline, ensuring the stability of thousands of downstream gaming and industrial applications.</li>
 </ul>
 <blockquote>
 <p>&ldquo;A System Surgeon doesn&rsquo;t patch symptoms; we fix the underlying skeletal structure.&rdquo;</p>
