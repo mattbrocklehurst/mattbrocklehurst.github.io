@@ -1,4 +1,9 @@
-# Matt Brocklehurst | Systems Surgeon
+---
+title: "Matt Brocklehurst | Systems Surgeon"
+layout: "index"
+type: "page"
+---
+## Matt Brocklehurst | Systems Surgeon
 
 **Senior R&D Systems Architect specializing in "Impossible" problems where software hits hardware.**
 

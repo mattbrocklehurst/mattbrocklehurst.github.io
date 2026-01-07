@@ -6,8 +6,15 @@
     <description>Recent content in Open Source on Matt Brocklehurst | Systems Surgeon</description>
     <generator>Hugo</generator>
     <language>en-gb</language>
-    <lastBuildDate>Tue, 15 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 May 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Technical Mission: OpenPnP Global Scale Robotics</title>
+      <link>http://localhost:1313/posts/openpnp-core-contributions/</link>
+      <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/openpnp-core-contributions/</guid>
+      <description>&lt;h2 id=&#34;the-objective&#34;&gt;The Objective&lt;/h2&gt;&#xA;&lt;p&gt;Improve the reliability and precision of the OpenPnP (Open Source Pick and Place) ecosystem for industrial-grade PCB assembly.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;&#xA;&lt;p&gt;Sub-millimeter precision in robotics requires a perfect marriage of computer vision and motion control, which often suffers from latency and jitter in open-source implementations.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-liquidation&#34;&gt;The Liquidation&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Vision Pipeline Optimization:&lt;/strong&gt; Contributed to the core logic that handles part alignment and feeder calibration.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Architectural Guidance:&lt;/strong&gt; Collaborated on global-scale robotics code to ensure cross-platform stability.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Community Leadership:&lt;/strong&gt; Provided &amp;ldquo;Fixer&amp;rdquo; level insights to resolve edge-case bugs in complex motion profiles.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;Bridging the gap between a community project and industrial-grade reliability.&amp;rdquo;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Technical Mission: SDL2 Mainline Thread-Sync Fix</title>
       <link>http://localhost:1313/posts/sdl2-mainline-fix/</link>

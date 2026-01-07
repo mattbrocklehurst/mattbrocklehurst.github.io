@@ -2,7 +2,7 @@
 <html lang="en">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   
-    <title>Posts :: Matt Brocklehurst | Systems Surgeon</title>
+    <title>Computer Vision :: Matt Brocklehurst | Systems Surgeon</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
 
   <meta name="robots" content="noodp" />
 
-<link rel="canonical" href="http://localhost:1313/posts/" />
+<link rel="canonical" href="http://localhost:1313/tags/computer-vision/" />
 
 
 
@@ -72,9 +72,9 @@
 
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Posts">
+<meta property="og:title" content="Computer Vision">
 <meta property="og:description" content="" />
-<meta property="og:url" content="http://localhost:1313/posts/" />
+<meta property="og:url" content="http://localhost:1313/tags/computer-vision/" />
 <meta property="og:site_name" content="Matt Brocklehurst | Systems Surgeon" />
 
   <meta property="og:image" content="http://localhost:1313/og-image.png">
@@ -86,7 +86,7 @@
 
 
 
-  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="Matt Brocklehurst | Systems Surgeon" />
+  <link href="/tags/computer-vision/index.xml" rel="alternate" type="application/rss+xml" title="Matt Brocklehurst | Systems Surgeon" />
 
 
 
@@ -165,13 +165,14 @@
 
   <div class="content">
     
+  <h1>Posts for: #Computer Vision</h1>
   
   <div class="posts">
     
       <article class="post on-list">
-        <h2 class="post-title">
+        <h1 class="post-title">
           <a href="http://localhost:1313/posts/openpnp-core-contributions/">Technical Mission: OpenPnP Global Scale Robotics</a>
-        </h2>
+        </h1>
         <div class="post-meta"><time class="post-date">2024-05-20</time></div>
 
         
@@ -209,102 +210,8 @@
         </div>
 
         
-           <div>
+          <div>
             <a class="read-more button inline" href="/posts/openpnp-core-contributions/">[]</a>
-          </div>
-        
-      </article>
-    
-      <article class="post on-list">
-        <h2 class="post-title">
-          <a href="http://localhost:1313/posts/zevatech-resurrection/">Technical Mission: Zevatech PM-560 Resurrection</a>
-        </h2>
-        <div class="post-meta"><time class="post-date">2023-11-15</time></div>
-
-        
-          <span class="post-tags">
-            
-            #<a href="http://localhost:1313/tags/reverse-engineering/">Reverse Engineering</a>&nbsp;
-            
-            #<a href="http://localhost:1313/tags/firmware/">Firmware</a>&nbsp;
-            
-            #<a href="http://localhost:1313/tags/c&#43;&#43;/">C&#43;&#43;</a>&nbsp;
-            
-            #<a href="http://localhost:1313/tags/robotics/">Robotics</a>&nbsp;
-            
-          </span>
-        
-
-        
-
-
-        <div class="post-content">
-          
-            <h2 id="the-objective">The Objective</h2>
-<p>Restore a decommissioned Zevatech Pick-and-Place machine to modern operational standards by bypassing obsolete, proprietary control logic.</p>
-<h2 id="the-problem">The Problem</h2>
-<p>The original hardware relied on undocumented, closed-source logic boards and legacy communication protocols that were no longer serviceable.</p>
-<h2 id="the-liquidation">The Liquidation</h2>
-<ul>
-<li><strong>Protocol Breaching:</strong> Reverse-engineered the proprietary signal logic to understand the mechanical intent of the original designers [cite: 2025-12-25].</li>
-<li><strong>Logic Transplant:</strong> Designed and implemented a modern firmware layer to interface with the original motor drivers and solenoids [cite: 2025-12-25].</li>
-<li><strong>Modern Integration:</strong> Successfully bridged the 1990s-era mechanics to a modern PC-based control system via custom C++ logic.</li>
-</ul>
-<blockquote>
-<p>&ldquo;I didn&rsquo;t just fix it; I gave it a modern brain.&rdquo;</p>
-          
-        </div>
-
-        
-           <div>
-            <a class="read-more button inline" href="/posts/zevatech-resurrection/">[]</a>
-          </div>
-        
-      </article>
-    
-      <article class="post on-list">
-        <h2 class="post-title">
-          <a href="http://localhost:1313/posts/sdl2-mainline-fix/">Technical Mission: SDL2 Mainline Thread-Sync Fix</a>
-        </h2>
-        <div class="post-meta"><time class="post-date">2021-06-15</time></div>
-
-        
-          <span class="post-tags">
-            
-            #<a href="http://localhost:1313/tags/c&#43;&#43;/">C&#43;&#43;</a>&nbsp;
-            
-            #<a href="http://localhost:1313/tags/kernel/">Kernel</a>&nbsp;
-            
-            #<a href="http://localhost:1313/tags/debugging/">Debugging</a>&nbsp;
-            
-            #<a href="http://localhost:1313/tags/open-source/">Open Source</a>&nbsp;
-            
-          </span>
-        
-
-        
-
-
-        <div class="post-content">
-          
-            <h2 id="the-objective">The Objective</h2>
-<p>Identify and liquidate a race condition in the SDL2 core that caused intermittent deadlocks during high-frequency window resizing on multi-threaded Win32 environments.</p>
-<h2 id="the-problem">The Problem</h2>
-<p>Standard application-level debugging couldn&rsquo;t catch the issue as it resided at the boundary of the <strong>Win32 Message Loop</strong> and SDL&rsquo;s internal thread-safety mutexes.</p>
-<h2 id="the-liquidation">The Liquidation</h2>
-<ul>
-<li><strong>Deep Debugging:</strong> Utilized <strong>WinDBG</strong> to trace kernel-level synchronization primitives.</li>
-<li><strong>Logic Correction:</strong> Refactored the wait-state logic to ensure deterministic thread release order.</li>
-<li><strong>Upstream Contribution:</strong> Submitted the fix to the SDL2 mainline, ensuring the stability of thousands of downstream gaming and industrial applications.</li>
-</ul>
-<blockquote>
-<p>&ldquo;A System Surgeon doesn&rsquo;t patch symptoms; we fix the underlying skeletal structure.&rdquo;</p>
-          
-        </div>
-
-        
-           <div>
-            <a class="read-more button inline" href="/posts/sdl2-mainline-fix/">[]</a>
           </div>
         
       </article>
