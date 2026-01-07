@@ -33,3 +33,5 @@ theme = 'terminal'
     name = "GitHub"
     url = "https://github.com/mattbrocklehurst"
     weight = 20
+    [menu.main.params] # This matches the .Params.NewTab in your HTML
+      NewTab = true
