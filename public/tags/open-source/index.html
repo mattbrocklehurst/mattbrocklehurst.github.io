@@ -2,7 +2,7 @@
 <html lang="en">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   
-    <title>Categories :: Matt Brocklehurst | Systems Surgeon</title>
+    <title>Open Source :: Matt Brocklehurst | Systems Surgeon</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
 
   <meta name="robots" content="noodp" />
 
-<link rel="canonical" href="http://localhost:1313/categories/" />
+<link rel="canonical" href="http://localhost:1313/tags/open-source/" />
 
 
 
@@ -72,9 +72,9 @@
 
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Categories">
+<meta property="og:title" content="Open Source">
 <meta property="og:description" content="" />
-<meta property="og:url" content="http://localhost:1313/categories/" />
+<meta property="og:url" content="http://localhost:1313/tags/open-source/" />
 <meta property="og:site_name" content="Matt Brocklehurst | Systems Surgeon" />
 
   <meta property="og:image" content="http://localhost:1313/og-image.png">
@@ -86,7 +86,7 @@
 
 
 
-  <link href="/categories/index.xml" rel="alternate" type="application/rss+xml" title="Matt Brocklehurst | Systems Surgeon" />
+  <link href="/tags/open-source/index.xml" rel="alternate" type="application/rss+xml" title="Matt Brocklehurst | Systems Surgeon" />
 
 
 
@@ -121,13 +121,66 @@
 
   <div class="content">
     
-  <div class="terms">
-    <h1>Categories</h1>
+  <h1>Posts for: #Open Source</h1>
+  
+  <div class="posts">
     
-    <ul>
-      
-      
-    </ul>
+      <article class="post on-list">
+        <h1 class="post-title">
+          <a href="http://localhost:1313/posts/sdl2-mainline-fix/">Technical Mission: SDL2 Mainline Thread-Sync Fix</a>
+        </h1>
+        <div class="post-meta"><time class="post-date">2021-06-15</time></div>
+
+        
+          <span class="post-tags">
+            
+            #<a href="http://localhost:1313/tags/c&#43;&#43;/">C&#43;&#43;</a>&nbsp;
+            
+            #<a href="http://localhost:1313/tags/kernel/">Kernel</a>&nbsp;
+            
+            #<a href="http://localhost:1313/tags/debugging/">Debugging</a>&nbsp;
+            
+            #<a href="http://localhost:1313/tags/open-source/">Open Source</a>&nbsp;
+            
+          </span>
+        
+
+        
+
+
+        <div class="post-content">
+          
+            <h2 id="the-objective">The Objective</h2>
+<p>Identify and liquidate a race condition in the SDL2 core that caused intermittent deadlocks during high-frequency window resizing on multi-threaded Win32 environments.</p>
+<h2 id="the-problem">The Problem</h2>
+<p>[cite_start]Standard application-level debugging couldn&rsquo;t catch the issue as it resided at the boundary of the <strong>Win32 Message Loop</strong> and SDL&rsquo;s internal thread-safety mutexes.</p>
+<h2 id="the-liquidation">The Liquidation</h2>
+<ul>
+<li>[cite_start]<strong>Deep Debugging:</strong> Utilized <strong>WinDBG</strong> to trace kernel-level synchronization primitives[cite: 47].</li>
+<li><strong>Logic Correction:</strong> Refactored the wait-state logic to ensure deterministic thread release order.</li>
+<li>[cite_start]<strong>Upstream Contribution:</strong> Submitted the fix to the SDL2 mainline, ensuring the stability of thousands of downstream gaming and industrial applications.</li>
+</ul>
+<blockquote>
+<p>&ldquo;A System Surgeon doesn&rsquo;t patch symptoms; we fix the underlying skeletal structure.&rdquo;</p>
+          
+        </div>
+
+        
+          <div>
+            <a class="read-more button inline" href="/posts/sdl2-mainline-fix/">[]</a>
+          </div>
+        
+      </article>
+    
+
+    <div class="pagination">
+  <div class="pagination__buttons">
+    
+    
+    
+  </div>
+</div>
+
   </div>
 
   </div>

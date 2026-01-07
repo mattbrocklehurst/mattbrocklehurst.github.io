@@ -1,4 +1,16 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = "terminal"
+baseURL = 'https://mattbrocklehurst.co.uk'
+languageCode = 'en-gb'
+title = 'Matt Brocklehurst | Systems Surgeon' # This fixes the tab title
+theme = 'terminal'
+
+[params]
+  # These are specific to the Terminal theme
+  contentTypeName = "posts"
+  title = "Matt Brocklehurst"
+  subtitle = "R&D Systems Architect & Problem Liquidator"
+  owner = "Matt Brocklehurst"
+  
+  # This section handles the "Terminal" appearance
+  [params.terminal]
+    showTitle = true
+    showSubtitle = true
