@@ -1,18 +1,9 @@
 ---
-title: "Technical Mission: OpenPnP Global Scale Robotics"
+title: "OpenPnP contributions"
 date: 2024-05-20
 tags: ["Robotics", "C++", "Open Source", "Computer Vision"]
 ---
 
-## The Objective
-Improve the reliability and precision of the OpenPnP (Open Source Pick and Place) ecosystem for industrial-grade PCB assembly.
+OpenPnP is open-source pick-and-place software, and getting sub-millimeter placement accuracy out of it means the vision pipeline and the motion control have to agree with each other almost perfectly — most of the failure modes are latency and jitter creeping in at the boundary between the two.
 
-## The Problem
-Sub-millimeter precision in robotics requires a perfect marriage of computer vision and motion control, which often suffers from latency and jitter in open-source implementations.
-
-## The Liquidation
-* **Vision Pipeline Optimization:** Contributed to the core logic that handles part alignment and feeder calibration.
-* **Architectural Guidance:** Collaborated on global-scale robotics code to ensure cross-platform stability.
-* **Community Leadership:** Provided "Fixer" level insights to resolve edge-case bugs in complex motion profiles.
-
-> "Bridging the gap between a community project and industrial-grade reliability."
+Contributed to the core alignment and feeder-calibration logic and worked through a handful of nasty edge cases in the motion profiles. 20+ feature branches over time, spanning fiducial homing, paste/glue dispensing, vision-based part alignment, and loose-part feeding — alongside an ongoing side project resurrecting old Zevatech hardware onto the same stack.

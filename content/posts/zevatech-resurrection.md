@@ -1,18 +1,9 @@
 ---
-title: "Technical Mission: Zevatech PM-560 Resurrection"
+title: "Zevatech PM-560 resurrection"
 date: 2023-11-15
 tags: ["Reverse Engineering", "Firmware", "C++", "Robotics"]
 ---
 
-## The Objective
-Restore a decommissioned Zevatech Pick-and-Place machine to modern operational standards by bypassing obsolete, proprietary control logic.
+A decommissioned Zevatech pick-and-place machine, running on control boards and a communication protocol nobody documented and nobody at the company remembers anymore. No schematics, no source, no vendor support — just the original hardware and a logic analyzer.
 
-## The Problem
-The original hardware relied on undocumented, closed-source logic boards and legacy communication protocols that were no longer serviceable. 
-
-## The Liquidation
-* **Protocol Breaching:** Reverse-engineered the proprietary signal logic to understand the mechanical intent of the original designers [cite: 2025-12-25].
-* **Logic Transplant:** Designed and implemented a modern firmware layer to interface with the original motor drivers and solenoids [cite: 2025-12-25].
-* **Modern Integration:** Successfully bridged the 1990s-era mechanics to a modern PC-based control system via custom C++ logic.
-
-> "I didn't just fix it; I gave it a modern brain."
+Reverse-engineered the signal logic to work out what the original designers actually intended, then wrote a modern firmware layer to drive the original motor controllers and solenoids directly. End result: 1990s mechanics running under a modern PC-based control stack in C++, with none of the original closed-source logic left in the loop.

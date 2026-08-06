@@ -1,31 +1,31 @@
 ---
-title: "Matt Brocklehurst | Systems Surgeon"
+title: "Matt Brocklehurst"
 layout: "index"
 type: "page"
 ---
-## Matt Brocklehurst | Systems Surgeon
+## Matt Brocklehurst
 
-**Senior R&D Systems Architect specializing in "Impossible" problems where software hits hardware.**
+**R&D engineer. I end up wherever software meets hardware that won't cooperate.**
 
-I provide high-leverage technical liquidation for complex systems. Whether it is rescuing undocumented legacy hardware or architecting high-performance rendering engines for global scale, I bridge the gap between low-level engineering and enterprise reliability.
-
----
-
-## 🛠️ Core Capabilities
-
-* **System Modernization:** Reverse-engineering and resurrecting obsolete hardware (Zevatech, Legacy ECUs).
-* **High-Performance C++:** Architecting deterministic rendering and low-latency audio kernels.
-* **Mass-Scale Reliability:** Proven track record with 50,000+ units deployed on resource-constrained PIC hardware.
-* **Full-Stack Hardware:** Multi-layer PCB design (Altium/Pulsonix) and ARM/RTOS firmware development.
-
-## 🚀 Featured Missions
-
-* **SDL2 Mainline Fix:** Liquidated a kernel-level thread synchronization deadlock in the Win32 event loop.
-* **DIBThread Rendering:** Architected a high-frequency rendering kernel for 60FPS deterministic display.
-* **OpenPnP Core:** Modernizing computer vision and motion control for open-source SMT assembly.
-* **Armbian RPi2 Kernel Fix:** Root-caused a Linux kernel DMA-mapping bug via live GDB/QEMU debugging, upstreamed to raspberrypi/linux and armbian/build.
+Most of what I do lives at that boundary — reverse-engineering protocols nobody documented, chasing kernel-level race conditions, keeping industrial hardware running long after the manufacturer stopped caring. If the fix needs an oscilloscope and a debugger open in the same afternoon, that's usually mine.
 
 ---
 
-*Currently available for Lead R&D roles and specialized technical consultancy.*
-[m@mattbrocklehurst.co.uk](mailto:m@mattbrocklehurst.co.uk) | [GitHub](https://github.com/mattbrocklehurst)
+## 🛠️ What I actually do
+
+* **Legacy hardware:** reverse-engineered and rebuilt control logic for equipment (Zevatech pick-and-place, legacy ECUs) with no remaining documentation or vendor support.
+* **Low-level C/C++:** deterministic rendering, low-latency audio, kernel-adjacent synchronization bugs — the kind that only show up under load.
+* **Firmware at scale:** logic running on 50,000+ deployed PIC-based units.
+* **Full-stack hardware:** multi-layer PCB design (Altium/Pulsonix) through to ARM/RTOS firmware.
+
+## 🚀 Recent work
+
+* **SDL2 mainline fix:** tracked a Win32 thread-sync deadlock down to the kernel synchronization primitives, fix is upstream.
+* **DIBThread rendering:** a rendering kernel built for deterministic 60fps output.
+* **OpenPnP:** ongoing contributions to vision and motion-control logic for open-source SMT assembly.
+* **Armbian / Raspberry Pi 2 kernel fix:** root-caused a Linux DMA-mapping bug live under gdb/QEMU, found the existing upstream fix was incomplete, took it to the actual kernel maintainers.
+
+---
+
+*Available for R&D/lead roles and consultancy.*
+[Email](mailto:m@mattbrocklehurst.co.uk) | [GitHub](https://github.com/mattbrocklehurst)

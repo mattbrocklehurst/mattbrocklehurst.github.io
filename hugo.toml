@@ -1,15 +1,15 @@
 baseURL = 'https://mattbrocklehurst.co.uk'
 languageCode = 'en-gb'
-title = 'Matt Brocklehurst | Systems Surgeon' # This fixes the tab title
+title = 'Matt Brocklehurst' # This fixes the tab title
 theme = 'terminal'
 
 [params]
   # These are specific to the Terminal theme
   contentTypeName = "none"
-  title = "Matt Brocklehurst | R&D Systems Architect & Fixer"
-  subtitle = "R&D Systems Architect & Problem Liquidator"
+  title = "Matt Brocklehurst"
+  subtitle = "R&D engineer. I end up wherever software meets hardware that won't cooperate."
   owner = "Matt Brocklehurst"
-  description = "Specializing in reverse-engineering, legacy hardware modernization, and industrial automation (OpenPnP, MegaSquirt, Zevatech)."  
+  description = "Reverse-engineering, legacy hardware, and kernel-level debugging — OpenPnP, Zevatech, Armbian, and whatever's on fire this week."
   keywords = ["Systems Architect", "Burnley", "Reverse Engineering", "OpenPnP", "Industrial Automation"]
 
   # This section handles the "Terminal" appearance
