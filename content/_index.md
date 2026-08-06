@@ -23,6 +23,7 @@ I provide high-leverage technical liquidation for complex systems. Whether it is
 * **SDL2 Mainline Fix:** Liquidated a kernel-level thread synchronization deadlock in the Win32 event loop.
 * **DIBThread Rendering:** Architected a high-frequency rendering kernel for 60FPS deterministic display.
 * **OpenPnP Core:** Modernizing computer vision and motion control for open-source SMT assembly.
+* **Armbian RPi2 Kernel Fix:** Root-caused a Linux kernel DMA-mapping bug via live GDB/QEMU debugging, upstreamed to raspberrypi/linux and armbian/build.
 
 ---
 
