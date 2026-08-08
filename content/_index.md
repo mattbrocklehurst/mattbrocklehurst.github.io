@@ -23,7 +23,7 @@ Most of what I do lives at that boundary — reverse-engineering protocols nobod
 * **SDL2 mainline fix:** tracked a Win32 thread-sync deadlock down to the kernel synchronization primitives, fix is upstream.
 * **DIBThread rendering:** a rendering kernel built for deterministic 60fps output.
 * **OpenPnP:** ongoing contributions to vision and motion-control logic for open-source SMT assembly.
-* **Armbian / Raspberry Pi 2 kernel fix:** root-caused a Linux DMA-mapping bug live under gdb/QEMU, found the existing upstream fix was incomplete, took it to the actual kernel maintainers.
+* **Raspberry Pi kernel DMA debugging:** root-caused a Linux DMA-mapping bug live under gdb/QEMU across two SoCs (Pi 2/3), fixed a genuine NULL-deref race it exposed, and worked out with the actual kernel maintainer why raspberrypi/linux's own upstream-style devicetree diverges from its downstream one.
 
 ---
 
